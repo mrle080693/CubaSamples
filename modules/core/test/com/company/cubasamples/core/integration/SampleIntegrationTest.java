@@ -1,4 +1,4 @@
-package com.company.cubasamples.core;
+package com.company.cubasamples.core.integration;
 
 import com.company.cubasamples.CubasamplesTestContainer;
 import com.haulmont.cuba.core.EntityManager;
