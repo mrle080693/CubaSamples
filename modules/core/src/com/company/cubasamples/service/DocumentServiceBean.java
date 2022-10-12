@@ -8,8 +8,13 @@ import javax.inject.Inject;
 @Service(DocumentService.NAME)
 public class DocumentServiceBean implements DocumentService {
 
+    private final DocumentRepository documentRepository;
+
     @Inject
-    private DocumentRepository documentRepository;
+    public DocumentServiceBean(DocumentRepository documentRepository) {
+        this.documentRepository = documentRepository;
+    }
+
 
     @Override
     public Long getDocumentsCount() {
